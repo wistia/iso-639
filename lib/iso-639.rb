@@ -545,12 +545,12 @@ class ISO_639 < Array
 
     # Returns the entry array for a language specified by its English name.
     def find_by_english_name(name)
-      ISO_639_2.detect { |entry| entry if entry.english_name == name) }
+      ISO_639_2.detect { |entry| entry if entry.english_name == name }
     end
 
     # Returns the entry array for a language specified by its French name.
     def find_by_french_name(name)
-      ISO_639_2.detect { |entry| entry if entry.french_name == name) }
+      ISO_639_2.detect { |entry| entry if entry.french_name == name }
     end
 
     # Returns an array of matches for the search term. The term can be a code
